@@ -11,14 +11,31 @@ header {
     background-color: rgb(17, 8, 8);
     position: fixed;
     width: 100%;
-
-    
 }
+
 .material-symbols-outlined {
     font-size: 50px;
     cursor: pointer;
     color: #eee;
     padding: 15px;
+}
+@media screen and (max-width: 992px) {
+    .material-symbols-outlined{
+       font-size: 20px;
+       padding: 10px;
+      }
+}
+@media screen and (max-width: 768px) {
+    .material-symbols-outlined{
+       font-size: 40px;
+       padding: 10px;
+      }
+}
+@media screen and (max-width: 767px) {
+    .material-symbols-outlined{
+       font-size: 30px;
+       padding: 5px;
+      }
 }
 .material-symbols-outlined:hover {
     color: blue;
@@ -38,16 +55,37 @@ aside {
     padding-top: 50px;
     width: 50%;
 }
+@media screen and (max-width: 767px) {
+aside {
+    padding-top: 5px;
+      }
+}
 aside .dd {
     color: #eee;
     text-align: end;
     font-size: 30px;
     cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+    aside .dd {
+        padding-top: 0px;
+          }
+    }
+@media screen and (max-width: 767px) {
+ .sidebar li a {
+      font-size: 10px;
+      }
+    }
 .icons {
     font-size: 30px;
     margin-left: 25px;
 }
+@media screen and (max-width: 767px) {
+    .icons {
+        font-size: 10px;
+        padding-top: 120px;
+          }
+    }
 .sidebar a:hover {
     transform: translateY(9px);
     transition: 0.7s;
@@ -57,6 +95,11 @@ aside .dd {
     padding: 20px;
     text-align: center;
 }
+@media screen and (max-width: 767px) {
+    .icons a {
+       padding: 7px
+          }
+    }
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -108,11 +151,43 @@ aside .dd {
     color: #eee;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 992px) {
+    .page1 h1{
+       font-size: 30px;
+      }
+}
+@media screen and (max-width: 768px) {
+    .page1 h1{
+       font-size: 30px;
+      }
+}
+@media screen and (max-width: 767px) {
+    .page1 h1{
+       font-size: 20px;
+      }
+}
 .page1 p {
     font-size: 30px;
     color: #eee;
     margin-bottom: 100px;
 }
+@media screen and (max-width: 768px) {
+    .page1 p {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+}
+@media screen and (max-width: 767px) {
+    .page1 p {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+}
+
 .phone1 {
     max-width: 100%;
     width: 50%;
@@ -125,16 +200,34 @@ aside .dd {
     text-align: center;
     background-color: rgba(175, 103, 103, 0.952);
 }
+
 .page2 h1 {
     padding-top: 100px;
     padding-bottom: 50px;
     color: #000;
     font-size: 50px;
 }
+
+@media screen and (max-width: 767px) {
+    .page2 h1 {
+        padding-top: 10px;
+    padding-bottom: 7px;
+    color: #000;
+    font-size: 15px;
+      }
+}
+
 .page2 p {
     padding-bottom: 50px;
     font-size: 25px;
 }
+@media screen and (max-width: 767px) {
+    .page2 p {
+        padding-bottom: 8px;
+        font-size: 10px;
+      }
+}
+
 .page2 a {
     text-decoration: none;
     color: rgb(134, 8, 8);
@@ -163,6 +256,13 @@ aside .dd {
     margin-bottom: 50px;
     padding-top: 85px;
 }
+@media screen and (max-width: 767px) {
+   .circle {
+        margin-top: 24px;
+        margin-bottom: 17px;
+      }
+}
+
 /* .circle h2 {
     
 } */
@@ -171,15 +271,37 @@ aside .dd {
     color: rgb(43, 43, 43);
     font-size: 30px;
 }
+@media screen and (max-width: 767px) {
+    .page3 .p {
+        font-family: monospace;
+    color: rgb(43, 43, 43);
+    font-size: 15px;
+      }
+}
+
 .page3 h2 {
     font-size: 30px;
     padding-bottom: 30px;
     cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+    .page3 h2 {
+        font-size: 20px;
+        padding-bottom: 11px;
+      }
+}
+
 .page3 .p2 {
     font-size: 25px;
     padding-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+    .page3 .p2 {
+        font-size: 10px;
+        padding-bottom: 25px;
+      }
+}
+
 button {
     padding: 20px;
     width: 25%;
@@ -188,12 +310,25 @@ button {
     align-self: center;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+    button {
+        padding: 15px;
+        width: 142px;
+        font-size: 10px;
+      }
+}
+
 .page4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: rgb(99, 0, 0);
+}
+@media screen and (max-width: 767px) {
+    .lines {
+        font-size: 10px;
+      }
 }
 .line1 {
     width: 50%;
@@ -215,6 +350,13 @@ li {
     padding: 20px;
     list-style: none;
 }
+@media screen and (max-width: 767px) {
+    li {
+        padding: 8px;
+        list-style: none;
+      }
+}
+
 li a {
     color: #eee;
     text-decoration: none;
@@ -229,6 +371,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+@media screen and (max-width: 767px) {
+    .ll {
+        font-size: 10px;
+      }
 }
 footer p {
     color: #eee;
