@@ -12,7 +12,11 @@ header {
     position: fixed;
     width: 100%;
 }
-
+@media screen and (max-width: 767px) {
+header {
+       justify-content: flex-end;
+      }
+}
 .material-symbols-outlined {
     font-size: 50px;
     cursor: pointer;
