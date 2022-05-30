@@ -12,6 +12,7 @@ header {
     background-color: rgb(17, 8, 8);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 #time {
     text-align: center;
@@ -65,7 +66,7 @@ aside {
     width: 50%;
     -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    
+    z-index: 1;
 }
 @-webkit-keyframes tracking-in-expand-fwd-bottom {
     0% {
@@ -183,8 +184,33 @@ aside .dd {
     justify-content: center;
     text-align: center;
     background-color: rgb(99, 0, 0);
+    -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .imgwhatsapp {
     width: 15%;
     height: 100%;
@@ -239,6 +265,7 @@ aside .dd {
     max-width: 100%;
     width: 50%;
     align-self: center;
+    
 }
 .page2 {
     display: flex;
@@ -246,6 +273,8 @@ aside .dd {
     justify-content: center;
     text-align: center;
     background-color: rgba(175, 103, 103, 0.952);
+    -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .page2 h1 {
@@ -294,6 +323,8 @@ aside .dd {
     background-size: cover;
     /* background-color: rgba(156, 86, 86, 0.952); */
 }
+
+  
 .circle {
     height: 200px;
     width: 200px;
