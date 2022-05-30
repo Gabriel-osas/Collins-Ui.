@@ -4,6 +4,7 @@ margin: 0px;
 box-sizing: border-box;
 font-family: 'Roboto Slab', serif;
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -11,6 +12,10 @@ header {
     background-color: rgb(17, 8, 8);
     position: fixed;
     width: 100%;
+}
+#time {
+    text-align: center;
+    color: #eee;
 }
 @media screen and (max-width: 767px) {
 header {
@@ -58,7 +63,43 @@ aside {
     transition: .3s ease;
     padding-top: 50px;
     width: 50%;
+    -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    
 }
+@-webkit-keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
 @media screen and (max-width: 767px) {
 aside {
     padding-top: 5px;
@@ -143,6 +184,7 @@ aside .dd {
     text-align: center;
     background-color: rgb(99, 0, 0);
 }
+
 .imgwhatsapp {
     width: 15%;
     height: 100%;
@@ -175,6 +217,7 @@ aside .dd {
     color: #eee;
     margin-bottom: 100px;
 }
+
 @media screen and (max-width: 768px) {
     .page1 p {
         font-size: 10px;
@@ -210,6 +253,7 @@ aside .dd {
     padding-bottom: 50px;
     color: #000;
     font-size: 50px;
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -313,7 +357,34 @@ button {
     border: solid;
     align-self: center;
     margin-bottom: 30px;
+    -webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
 @media screen and (max-width: 767px) {
     button {
         padding: 15px;
