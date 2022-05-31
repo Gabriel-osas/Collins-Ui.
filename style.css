@@ -3,6 +3,7 @@ padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 font-family: 'Roboto Slab', serif;
+scroll-behavior: smooth;
 }
 
 header {
@@ -184,8 +185,8 @@ aside .dd {
     justify-content: center;
     text-align: center;
     background-color: rgb(99, 0, 0);
-    -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 @-webkit-keyframes slide-in-left {
     0% {
@@ -273,8 +274,8 @@ aside .dd {
     justify-content: center;
     text-align: center;
     background-color: rgba(175, 103, 103, 0.952);
-    -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* -webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 
 .page2 h1 {
