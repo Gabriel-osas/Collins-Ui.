@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
          <link rel="stylesheet" href="style.css"/>
          <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -10,6 +11,7 @@
     <body>
  
     <header>
+        <div id="time"></div>
         <span class="material-symbols-outlined" id="opentab" onclick="openNav()">
             menu
             </span>
@@ -39,42 +41,42 @@
 
     <main>
         <section class="page1" id="page1">
-            <img class="imgwhatsapp" src="WHATSAPP.png" alt="WhatsApp logo">
-            <h1>
+            <img class="imgwhatsapp" src="img/WHATSAPP.png" alt="WhatsApp logo" data-aos="fade-up"  data-aos-duration="1000">
+            <h1 data-aos="fade-up"  data-aos-duration="1000">
                 Simple, Secure, <br> Reliable Messaging.
             </h1>
-            <p>
+            <p data-aos="fade-up"  data-aos-duration="1000">
                 With Whatsapp, you'll get fast, simple, secure <br> messaging and calling for free*, available on <br> phones all over the world
             </p>
-            <img class="phone1" src="collins-img-1.png" alt="phone image">
+            <img class="phone1" src="img/collins-img-1.png" alt="phone image" data-aos="fade-up"  data-aos-duration="1000">
         </section>
         <section class="page2" id="page2">
-            <h1>
+            <h1 data-aos="fade-up"  data-aos-duration="1000">
                 WhatsApp Buisness App 
             </h1>
-            <p>
+            <p data-aos="fade-up"  data-aos-duration="1000">
                 <a href="web.whatsapp.com">WhatsApp Buisness </a>is a free to download app <br> that was built with the small buisness oowner in <br> mind. Create a catalog to showcase your <br> products and services. Connect with your <br> customers easily by using tools to automate, <br> sort and quickly respond to messages. 
             </p>
-            <p class="p1"> 
+            <p class="p1" data-aos="fade-up"  data-aos-duration="1000"> 
                 WhatsApp can also help medium and large <br> buisnesses provide customer support and <br> deliver important notification to customers. <br> Learn more about  <a href="web.whatsapp.com"> WhatsApp Buisness API.</a>
             </p>
-            <img class="phone2" src="collins-img-2.png" alt="phone image">
+            <img class="phone1" src="img/collins-img-2.png" alt="phone image" data-aos="fade-up"  data-aos-duration="1000">
         </section>
-        <section class="page3" id="page3" style="background-image: url(WHATSAPP.png)";>
+        <section class="page3" id="page3" style="background-image: url(img/WHATSAPP.png)";>
             <div class="circle" id="circle">
                 <h2 onclick="myFunction()"> 
                 Hello!
                 </h2>
         </div>
            <p class="p">END-TO-END ENCRYPTION</p>
-           <h2>Security by Default</h2>
-           <p class="p2">
+           <h2 data-aos="fade-up"  data-aos-duration="1000">Security by Default</h2>
+           <p class="p2" data-aos="fade-up"  data-aos-duration="1000">
                Some of your most personal moments are <br> shared on Whatsapp, which is why we built <br> end-to-end encryption into the latest versions of <br> our app. with end-to-end encryption, your <br> messages and calls are secured so only you <br> and the person you are communicating with can <br> read or listen to them, and nobody in between, <br> not even WhatsApp 
            </p>
-          <button onclick="alert('CONGRATULATIONS')">EXPLORE FEATURES </button>
+           <button onclick="alert('CONGRATULATIONS')">EXPLORE FEATURES </button>
         </section>
         <section class="page4">
-            <div class="lines">
+            <div class="lines" data-aos="fade-up"  data-aos-duration="1000">
                <div class="line1">
                    <h1> WHATSAPP</h1>
                    <ul>
@@ -90,7 +92,7 @@
                        <li><a href="web.whatsapp.com">Mac/PC</a></li>
                        <li><a href="web.whatsapp.com">Andriod</a></li>
                        <li><a href="web.whatsapp.com">iPhone</a></li>
-                       <li><a href="web.whatsapp.com">Esada UCL CHAMPION</a></li>
+                       <li><a href="web.whatsapp.com">Esada madrid fan oshi</a></li>
                    </ul>
                </div>
                <div class="line2">
@@ -114,18 +116,12 @@
             </div>
         </section>
     </main>
-</body>
-    <footer>
-        <img class="lastimg" src="WHATSAPP.png" alt="whatsapp logo">
-        <div class="ll">
-        <p>2022 WhatsApp LLC</p>
-        <span>Privacy & Terms <span class="material-symbols-outlined">
-            chevron_right
-            </span> 
-        </div>
-    </footer>
-    <!-- <button onclick="document.getElementById('bit').innerHTML =  Date()">click me to show time</button>
-    <p id="bit"></p> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        //   once: true,
+      });
+    </script>
     <script>
         function myFunction() {
             document.getElementById("circle").style.backgroundColor = "Green";
@@ -136,5 +132,22 @@
         function closeNav() {
             document.getElementById('sidebar').style.display = "none"
         }
+        
+        // let greeting = new Date();
+        // document.getElementById('time').innerHTML = greeting;
     </script>
+</body>
+    <footer>
+        <img class="lastimg" src="img/WHATSAPP.png" alt="whatsapp logo">
+        <div class="ll">
+        <p>2022 WhatsApp LLC</p>
+        <span>Privacy & Terms <span class="material-symbols-outlined">
+            chevron_right
+            </span> 
+        </div>
+    </footer>
+    <!-- <button onclick="document.getElementById('bit').innerHTML =  Date()">click me to show time</button>
+    <p id="bit"></p> -->
+    
+   
 </html>
